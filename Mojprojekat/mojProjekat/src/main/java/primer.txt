@@ -1,0 +1,10 @@
+main(){
+int x;
+int y;
+x=x+6;
+while (x>0) {
+int br;
+y=y+3;
+}
+output(x);
+}

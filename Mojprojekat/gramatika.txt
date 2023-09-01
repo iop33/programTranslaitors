@@ -1,0 +1,50 @@
+1.Program -> main() mainBlok
+2.mainBlock->{VarList StatementList}
+3.VarList->VarList VarDecl|
+4.VarDecl
+5.VarDecl->Type id;
+6.Type->int|
+7.float|
+8.char|
+9.bool
+12.StatementList->StatementList Statement|
+13.Statement
+14.Statement->input(id);|
+	15.output(id);|
+	16.Loop|
+	17.ID=Expressions;|
+	18.ifStatement|
+	19.Block
+20.Loop->while(LogExpression)Statement|
+21.for(StatementList)Statement
+22.ifStatement->if(LogExpression)Statement|
+23.elseIf(LogExpression)Statement|
+24.else Statement
+25.Block->mainBlock
+26.Expressions->Expressions Expression|
+27.Expression
+28.Expression->Expression+Term|
+29.Expression-Term|
+30.Term
+31.Term->Term*Factor|
+32.Term/Factor|
+33.Factor
+34.Factor->ID|
+35.CONST
+36.LogExpressions->LogExpressions LogExpression|
+37.LogExpression
+38.LogExpression->LogExpression||AndExpression|
+39.AndExpression
+40.AndExpression->AndExpression && RelExpression|
+41.RelExpression
+42.RelExpression->Expression RelOp Expression|
+43.Expression
+44.RelOp-> <|
+	45.<=|
+	46.==|
+	47.!=|
+	48.>|
+	49.>=
+
+
+Ova gramatika,kao promenljive predstavlja ID,a kao vrednosti predstavlja Const.
